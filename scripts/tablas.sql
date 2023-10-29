@@ -63,7 +63,7 @@ CREATE TABLE IF NOT EXISTS CURSOS_HABILITADOS(
 	codigo_curso_habilitado INT NOT NULL AUTO_INCREMENT,
     ciclo VARCHAR(2) NOT NULL,
 	seccion VARCHAR(1) NOT NULL,
-    anio INTEGER NOT NULL,
+    anio INT NOT NULL,
     cupo_maximo SMALLINT NOT NULL,
     codigo_curso INT NOT NULL,
     siif INT NOT NULL,

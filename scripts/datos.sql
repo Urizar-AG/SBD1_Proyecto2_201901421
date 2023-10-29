@@ -1,3 +1,5 @@
+USE proyecto2_fiusac;
+
 -- REGISTRO DE CARRERAS
 CALL crearCarrera('Ingenieria Civil');       -- 1  VALIDAR QUE LES QUEDE ESTE ID EN LA CARRERA CORRESPONDIENTE
 CALL crearCarrera('Ingenieria Industrial');  -- 2  VALIDAR QUE LES QUEDE ESTE ID EN LA CARRERA CORRESPONDIENTE
@@ -38,8 +40,8 @@ CALL registrarEstudiante(201710161, 'ESTUDIANTE','CIVIL RANDOM','20-08-1995','es
 -- AGREGAR CURSO
 -- aqui se debe de agregar el AREA COMUN a carrera
 -- Insertar el registro con id 0
-INSERT INTO carrera (id,nombre) VALUES (0,'Area Comun');
-UPDATE carrera SET id = 0 WHERE id = LAST_INSERT_ID();
+INSERT INTO CARRERAS (codigo_carrera, nombre) VALUES (0,'AREA COMUN');
+UPDATE CARRERAS SET codigo_carrera = 0 WHERE codigo_carrera = LAST_INSERT_ID();
 -- AREA COMUN
 CALL crearCurso(0006,'Idioma Tecnico 1',0,7,0,false); 
 CALL crearCurso(0007,'Idioma Tecnico 2',0,7,0,false);
